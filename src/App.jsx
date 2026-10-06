@@ -1,4 +1,4 @@
-import { ItemProvider } from "./ItemContext";
+import { ItemProvider } from "./ItemProvider";
 import ItemList from "./ItemList";
 import SelectedItems from "./SelectedItems";
 

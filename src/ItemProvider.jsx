@@ -1,6 +1,5 @@
-import { createContext, useContext, useState } from "react";
-
-const ItemContext = createContext();
+import { useState } from "react";
+import { ItemContext } from "./ItemContext";
 
 export function ItemProvider({ children }) {
   const [items, setItems] = useState([]);
@@ -18,12 +17,8 @@ export function ItemProvider({ children }) {
   }
 
   return (
-    <ItemContext.Provider value={{ items, addItem, clearItems , removeItem }}>
+    <ItemContext.Provider value={{ items, addItem, clearItems, removeItem }}>
       {children}
     </ItemContext.Provider>
   );
-}
-
-export function useItems() {
-  return useContext(ItemContext);
 }

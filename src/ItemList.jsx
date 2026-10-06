@@ -1,4 +1,4 @@
-import { useItems } from "./ItemContext";
+import { useItems } from "./useItems";
 
 const availableItems = [
   {

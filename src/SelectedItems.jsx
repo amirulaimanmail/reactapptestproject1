@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { useItems } from "./ItemContext";
+import { useItems } from "./useItems";
 
 export default function SelectedItems() {
   const { items, clearItems, removeItem } = useItems();
